@@ -612,7 +612,7 @@ class common {
 				$site = 'https://ZwiiCMS.com'; } else {
 				$site = helper::baseUrl(false);	}
 
-			$googlePagespeedData = file_get_contents('https://www.googleapis.com/pagespeedonline/v2/runPagespeed?url='. $site .'&screenshot=true&key=AIzaSyBqIP3mGvATby3mU_Xn-UoZjbVoem6MfBI');	
+			$googlePagespeedData = file_get_contents('https://www.googleapis.com/pagespeedonline/v2/runPagespeed?url='. $site .'&screenshot=true&key=');	
 			$googlePagespeedData = json_decode($googlePagespeedData, true);
 			$screenshot = $googlePagespeedData['screenshot']['data'];
 			$screenshot = str_replace(array('_','-'),array('/','+'),$screenshot);
