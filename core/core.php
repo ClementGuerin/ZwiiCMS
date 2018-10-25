@@ -2015,7 +2015,7 @@ class layout extends common {
 	 * Affiche la meta image (site screenshot)
 	 */
 	public function showMetaImage() {		
-		echo '<meta property="og:image" content="' . helper::baseUrl() .'site/screenshot.png" />';
+		echo '<meta property="og:image" content="' . helper::baseUrl(false) .'site/file/source/screenshot.png" />';
 	}
 
 
